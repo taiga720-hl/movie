@@ -52,6 +52,16 @@ PostgreSQL
  -price            :金額
  -created_at       :作成日
 
+↓仮
+-seats
+ -id             :主キー
+ -screening_id   :FK (screenings.id)
+ -row_name       :行 (A〜H)
+ -col_num        :列 (1〜7)
+ -seat_label     :座席名 (例: A-1)
+ -is_reserved    :予約済みフラグ (boolean)
+ -created_at     :作成日
+
 -payments
  -id               :主キー
  -order_id         :Fk (orders.id)
